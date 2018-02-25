@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: jenkins
-    image: jenkins/jenkins:lts
+    image: jenkins/jenkins
     ports:
     - name: jenkins-port
       containerPort: 8080
@@ -17,4 +17,4 @@ spec:
   volumes:
   - name: jenkins-home
     hostPath: 
-         path: /Users/perkael/jenkins-home
+        path: /Users/perkael/jenkins-home
